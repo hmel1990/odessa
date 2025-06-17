@@ -14,7 +14,7 @@ function App() {
         <Introducing />
         <Architecture/>
         <Modern/>
-        <Buttons/>
+        <Buttons forScale={1} forCount={0} />
     </>
   )
 }

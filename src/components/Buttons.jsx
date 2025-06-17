@@ -2,11 +2,11 @@ import './Сommon.css';
 import { useState } from "react";
 import { FaThumbsUp, FaThumbsDown } from 'react-icons/fa';
 
-export default function Buttons() {
-    const [countLike, setCountLike] = useState(0);
-    const [countDisLike, setCountDisLike] = useState(0);
-    const [scaleLike, setScaleLike] = useState(1);
-    const [scaleDisLike, setScaleDisLike] = useState(1);
+export default function Buttons({forScale, forCount}) {
+    const [countLike, setCountLike] = useState(forCount);
+    const [countDisLike, setCountDisLike] = useState(forCount);
+    const [scaleLike, setScaleLike] = useState(forScale);
+    const [scaleDisLike, setScaleDisLike] = useState(forScale);
 
     return (
         <div className="buttonsWrapper">
