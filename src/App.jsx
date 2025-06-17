@@ -3,6 +3,8 @@ import Header from './components/header/Header.jsx'
 import Introducing from './components/introducing/Introducing.jsx'
 import Architecture from './components/architecture/Architecture.jsx'
 import Modern from './components/modern/Modern.jsx'
+import Buttons from './components/Buttons.jsx'
+
 
 function App() {
 
@@ -12,6 +14,7 @@ function App() {
         <Introducing />
         <Architecture/>
         <Modern/>
+        <Buttons/>
     </>
   )
 }
