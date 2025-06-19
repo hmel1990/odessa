@@ -44,7 +44,7 @@ h2 {
     transform: translate(-50%, -50%);
 
 }
-.buttonsWrapper{
+.buttonsWrapper, .weather{
     width: 100%;
     display: flex;
     flex-direction: row;
