@@ -1,0 +1,11 @@
+
+body {
+    background-color: white;
+}
+.wrapperForCards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 110vh;
+    height: 60vh;
+}
