@@ -1,9 +1,11 @@
 import '../../Сommon.css'
 import './cardsStyle.css'
+import { useState } from 'react';
 
 
 export default function Card ({data})
 {
+    const [isButtonPressed, setIsButtonPressed] = useState(false);
     // const {features, myClassName} = data;
     return (
         <>
@@ -31,7 +33,17 @@ export default function Card ({data})
                         })
                         }
                     </ul>
-                    <div className={'footer'}>Select package</div>
+                    <button
+                        className="footer"
+                        style={{
+                            transform: isButtonPressed ? 'scale(0.95)' : 'scale(1)',
+                            transition: 'transform 0.1s ease',
+                        }}
+                        onMouseDown={() => setIsButtonPressed(true)}
+                        onMouseUp={() => setIsButtonPressed(false)}
+                        onMouseLeave={() => setIsButtonPressed(false)}
+                    >
+                        Select package</button>
                 </div>
             </div>
         </>
