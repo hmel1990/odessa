@@ -7,7 +7,6 @@ export default function Content ()
             <ul className="nav-tabs">
                 <li> <Link to="/">Главная</Link></li>
                 <li> <Link to="/architecture">Архитектура</Link></li>
-
             </ul>
             </>
             )
