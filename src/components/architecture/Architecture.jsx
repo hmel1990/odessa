@@ -1,4 +1,3 @@
-import '../Сommon.css'
 
 
 

@@ -60,3 +60,70 @@ h2 {
 .myButton:focus {
     outline: none;
 }
+.text{
+    color: white;
+}
+.photoWrapper {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    box-sizing: border-box;
+}
+.photoImage
+{
+    flex: 0 0 calc(50% - 10px); /* два в ряд */
+    max-width: calc(50% - 10px);
+    box-sizing: border-box;
+}
+
+
+.photoImage img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+    display: block;
+}
+
+.wrapper-arch{
+    padding: 20px;
+    flex-direction: column;
+}
+.nav-tabs{
+    list-style-type: none;
+    padding-left: 0; /* Убирает отступ слева */
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+.nav-tabs li {
+    padding: 5px 70px;
+    background-color: #747bff;
+    border-radius: 20px;
+}
+
+.nav-tabs li a {
+    color: white;
+}
+
+.nav-link {
+    margin: 0 15px;
+    padding: 5px 70px;
+    background-color: #747bff;
+    border-radius: 20px;
+    color: white;
+}
+
+.profile-nav{
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.active {
+    background-color: rgb(71, 78, 250);
+
+}
+
