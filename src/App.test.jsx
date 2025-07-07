@@ -20,9 +20,9 @@ describe('App component', () => { // группа тестов для компо
         expect(screen.getByRole('link', { name: 'Главная' })).toBeInTheDocument();
     })
 
-    it('show div Photo on click', () => { // тест: проверяет, что счётчик увеличивается при клике
+    it('show div Photo on click', () => {
         render(<App />) // рендерим компонент App
-        const button = screen.getByRole('link', { name: 'Архитектура' }) // получаем кнопку со значением "count is 0"
+        const button = screen.getByRole('link', { name: 'Архитектура' })
         fireEvent.click(button) // симулируем клик по кнопке
         expect(screen.getByRole('link', { name: 'Фото' })).toBeInTheDocument();
 
