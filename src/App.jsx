@@ -4,9 +4,9 @@ import {BrowserRouter, Routes, Route, NavLink, Link, Outlet, Navigate} from 'rea
 import Homeinfo from "./components/HomeInfo.jsx";
 import Content from './components/Content.jsx'
 import ArchitectureRoute from "./components/ArchitectureRoute.jsx";
-import Streets from "./components/Streets.jsx";
-import Buildings from "./components/Buildings.jsx";
-import Photo from "./components/Photo.jsx";
+import Streets from "./components/streets/Streets.jsx";
+import Buildings from "./components/buildings/Buildings.jsx";
+import Photo from "./components/photo/Photo.jsx";
 
 
 
